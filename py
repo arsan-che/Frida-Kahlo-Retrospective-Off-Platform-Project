@@ -21,3 +21,12 @@ print("Updated paintings with dates:", paintings)
 
 # Calculate the total number of paintings
 paintings_length = len(paintings)
+
+# Generate a list of audio tour numbers starting from 1 to the number of paintings
+audio_tour_number = list(range(1, paintings_length + 1))
+
+# Combine audio tour numbers with paintings into a master list
+master_list = list(zip(audio_tour_number, paintings))
+
+# Print the master list of audio tour numbers with paintings
+print("Master list of audio tour numbers with paintings:", master_list)
